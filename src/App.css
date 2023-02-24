@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
+body {
+    background-image: linear-gradient( rgb(255, 38, 142) 0%, rgb(255, 105, 79) 100% );
+    display: flex;
+    font-family: Work Sans, sans-serif;
+    height: 100vh;
+    justify-content: center;
+    width: 100vw
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+    box-shadow: inset 5px 5px 15px 16px hsla(0, 0%, 100%, .55);
+    display: flex;
+    flex-direction: column;
+    margin: 64px;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    width: 300px;
+    height: 500px;
+    background-color: rgb(211, 187, 221);
+    border-radius: 70px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+marquee {
+    color: #5e376d;
+    font-weight: 400;
+    letter-spacing: 2px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.track {
+    background-color: hsla(0, 0%, 100%, .5);
+    border: none;
+    border-radius: 10px
 }
 
-.App-link {
-  color: #61dafb;
+.track:hover {
+    background-color: hsla(0, 0%, 100%, .2);
+    cursor: pointer
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.marquee-1 {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 66px;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 70px 70px 0px 0px;
+}
+
+.marquee-2 {
+    width: 80%;
+}
+
+.track-list-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.track{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+.action-button{
+    display: flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
 }
